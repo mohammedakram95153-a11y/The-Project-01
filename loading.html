@@ -1,0 +1,57 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Loading Animation</title>
+  <style>
+    body {
+      background-color: #797842;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh; /* full screen center */
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+    }
+    .container {
+      height: 300px;
+      width: 220px;
+      background-color: #222;
+      border: 1px solid rgb(0, 247, 255);
+      border-radius: 10px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      box-shadow: 0 0 15px rgba(13, 255, 0, 0.5);
+    }
+    h3, h4 {
+      color: rgb(2, 191, 224);
+      margin: 0;
+    }
+    .circle {
+      margin: 30px auto;
+      width: 60px;
+      height: 60px;
+      border: 5px solid rgba(255, 255, 255, 0.2); /* faint border */
+      border-top-color: rgb(255, 225, 0); /* highlight top */
+      border-radius: 50%;
+      animation: spin 1s linear infinite;
+    }
+    @keyframes spin {
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h4>LOADING</h4>
+    <h3>ANIMATION</h3>
+   <div class="circle"></div>
+  </div>
+</body>
+</html>
